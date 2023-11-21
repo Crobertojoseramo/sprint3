@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Ploteados B.C.</title>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="contenedor_texto">
+                <h4>ploteados b.c.</h4>
+                <div class="contenedor_texto_animacion"></div>
+                <div class="barra_escritura"></div>
+            </div>
+        </div>
+
+        <form action=" / procesar "method="post">   
+            <fieldset>
+                <legend>
+                    Para consultar presupuesto, rellene el siguiente formulario
+                </legend>
+                <br />
+                <select name="Ploteos:">
+                    <option value="ploteos">Ploteos :</option>
+                    <option value="vehicular">vehicular</option>
+                    <option value="vehicular completo">vehicular completo</option>
+                    <option value="Vidrios">vidrios</option>
+                    <option value="polarizados">Polarisados</option>
+                    <option value="personalizados">personalizados</option>
+                </select>
+
+                <select name="Marcas/Modelos">
+                    <option value="marcas/modelos">marcas/modelos:</option>
+                    <option value="fiat">fiat</option>
+                    <option value="volkswagen truck">volkswagen</option>
+                    <option value="renaul">renaul</option>
+                    <option value="twingo">twingo</option>
+                    <option value="ford">ford</option>
+                    <option value="citroen">citroen</option>
+                    <option value="otras marcas">otras marcas</option>
+                </select>
+
+                <select name="Modelos/Colores">
+                    <option value="Modelos/Colores:">Modelos/Colores:</option>
+                    <option value="fibra de carbono">fibra de carbono</option>
+                    <option value="vinilo dorado">vinilo dorado</option>
+                    <option value="vinilo plateado">vinilo plateado</option>
+                    <option value="vinilo negro">vinilo negro</option>
+                    <option value="vinilo blanco">vinilo blanco</option>
+                    <option value="vinilo azul">vinilo azul</option>
+                    <option value="vinilo azul metal">azul metal</option>
+                    <option value="Opticas: ">Opticas:</option>
+                    <option value="amarillo">amarrillo</option>
+                    <option value="azul">azul</option>
+                    <option value="fiume">fiume</option>
+                    <option value="camaleon">camaleon</option>
+                    <option value="Polarizados:">Polarizados:</option>
+                    <option value="fuime50%">fuime50%</option>
+                    <option value="espejado">espejado</option>
+                    <option value="personalizados">personalizados</option>
+                </select>
+
+                <select name="piezas">
+                    <option value="piezas">piezas :</option>
+                    <option value="llantas">llantas</option>
+                    <option value="faldones">faldones</option>
+                    <option value="guard.barros">guard.barros</option>
+                    <option value="puertas">puertas</option>
+                    <option value="capot">capot</option>
+                    <option value="baul">baul</option>
+                    <option value="techo">techo</option>
+                    <option value="opticas">opticas</option>
+                    <option value="vidrios completos">vidrios completos</option>
+                    <option value="completo">completo</option>
+                    <option value="otras piezas">otras piezas</option>
+                </select>
+
+                <select name="cantidad de unidades">
+                    <option value="cantidad de unidades">cantidad de unidades:</option>
+                    <option value="0 unid.">0 unid.</option>
+                    <option value="1 unid.">1 unid.</option>
+                    <option value="2 unid.">2 unid.</option>
+                    <option value="3 unid.">3 unid.</option>
+                    <option value="4 unid.">4 unid.</option>
+                    <option value="5 unid.">5 unid.</option>
+                    <option value="6 unid.">6 unid.</option>
+                    <option value="7 unid.">7 unid.</option>
+                    <option value="8 unid.">8 unid.</option>
+                    <option value="9 unid.">9 unid.</option>
+                    <option value="10 unid.">10 unid.</option>
+                    <option value="completo">completo</option>
+                    <option value="mas unidades">mas unidades</option>
+                </select>
+                <br />
+                <!-- <button type="submit">buscar</button>
+              <input type="text" id="buscar" name="buscar" required/> / esto es un boton de busqueda-->
+
+                <img width="350" alt="esto es auto ploteado" src="./imagenes/fondo.jpg" />
+                <br />
+
+                <br />
+                <img width="350" alt="esto es auto ploteado" src="./imagenes/fondo2.jpg" />
+                <br />
+
+                <br />
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                <br />
+
+                <label>Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required />
+                <br />
+
+                <label for="mail">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <!-- <select>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option><br/>
+                   </select>  /esto, sirve para seleccionar el sexo, f o m -->
+
+                <br />
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        <br />
+    </main>
+
+    <footer>
+        Copyright © 2023 Ploteados B.C. S.R.L. <br />
+        Calle. Los Ceibos 3039, Piso 1, CP 3196, Esquina, Corrientes
+    </footer>
+    <br />
+    <br/>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

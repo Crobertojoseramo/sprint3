@@ -1,0 +1,171 @@
+     /*esta imagen es de fondo de pantalla*/
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+  
+}
+  legend{
+    text-transform: uppercase;
+    background-color: rgb(0, 157, 255);
+    
+}
+  fieldset{
+     text-align: center;
+}
+  .contenedor_texto{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    text-transform: uppercase ;
+    font-size: 23px;
+    color:black;
+    /*background-color: red;*/
+    /*height: 40px;*/
+     /* line-height: 20px;*/
+}
+.contenedor_texto_animacion{
+    display: flex;
+}
+  h4{
+    background-color: red;
+    margin-right: 48px;
+    height: 40px;
+    line-height: 40px; 
+    text-transform:uppercase;
+    text-align: center;
+    border-radius: 20px; 
+}
+  
+  .barra_escritura{
+    width: 3px;
+    transform: rotateZ(10deg);
+    animation: barra-animacion 1s ease infinite;
+}
+  select{
+      background-color: rgb(0, 157, 255);
+       text-align: center;
+      height: 25px;
+      text-transform: uppercase;
+      color:#fff;
+      margin-bottom: 20px;
+      cursor: pointer;
+      padding: 0px;
+      
+  }  
+  select:hover{
+    transition: 0.7;
+    background-color: red; 
+  }
+  
+  input{  
+      
+      text-align: center;
+      height: 27px;
+      margin-bottom: 20px;
+      cursor: pointer;
+  }
+      /*estos es una imagen*/
+  form{
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+       
+  }
+  button{
+      text-transform: uppercase;
+      background-color: rgb(8, 80, 136);
+      color:#fff;
+      cursor: pointer;
+  }
+  button:hover{
+    transition: 0.7;
+    background-color: red;
+  }
+  label{
+    color:#fff;
+  }
+  footer{
+      background-color: red;
+      color:black;
+      text-align: center;
+      height: 40px;
+      line-height: 20px;
+  }
+  /*bara de escritura animacion*/
+  @keyframes barra-animacion{
+    50% {
+      height: 20px;
+    }
+  }
+
+
+  /*configuracion del diseño responsivo*/
+  @media(max-width: 600px){
+    body{
+      background-image: url("./imagenes/fondo.jpg");
+     
+    }
+    legend{
+      text-transform: uppercase;
+      
+    }
+    h4{
+    text-align: center;
+    text-transform: uppercase;
+    background-color:yellow;
+    
+    }
+    fieldset{
+       text-align: center;
+      
+    }
+    select{
+         text-align: center;
+        height: 18px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        cursor: pointer;
+        padding: 0px;
+        
+    }
+    
+    input{  
+        
+        text-align: center;
+        height: 17px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+      /*es una imagen*/
+    form{
+      background-image: url("./imagenes/fondo.jpg");
+         
+    }
+    button{
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    footer{
+        background-color: yellow;
+        text-align: center;
+        height: 40px;
+        line-height: 20px;
+    }
+
+    
+  }
+      
+  /*tablet*/
+  @media(min-width:601px) and (max-width:800px){
+
+  h4{
+   background-color: blueviolet;
+
+  }
+  footer{
+    background-color: blueviolet;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+  }
+ 
+}
